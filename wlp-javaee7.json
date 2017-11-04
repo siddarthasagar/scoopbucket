@@ -1,0 +1,20 @@
+{
+  "homepage": "https://developer.ibm.com/wasdev",
+  "version": "17.0.0.2",
+  "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/17.0.0.2/wlp-javaee7-17.0.0.2.zip",  
+  "env_add_path": "wlp/bin",
+  "suggest": {
+    "JDK": [
+      "extras/oraclejdk",
+      "openjdk"
+    ]
+  },
+  "checkver": {
+    "url": "https://developer.ibm.com/wasdev/downloads/download-latest-stable-websphere-liberty-runtime/",
+    "re": "Download Liberty \\(([\\d.]+)\\) with Java EE 7 Web Profile"
+  },
+  "autoupdate": {
+    "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/$version/wlp-javaee7-$version.zip",
+    "extract_dir": "wlp-javaee7-$version"
+  }
+}
