@@ -1,6 +1,6 @@
 {
-    "homepage": "https://www.cloudera.com/documentation/other/connectors/hive-odbc/latest.html",
-    "version": "2.5.25",
+    "homepage": "https://www.cloudera.com/documentation/other/connectors/impala-odbc/latest.html",
+    "version": "2.5.41",
     "architecture": {
         "64bit": {
             "url": "https://downloads.cloudera.com/connectors/impala_odbc_2.5.41.1029/Windows/ClouderaImpalaODBC64.msi",
