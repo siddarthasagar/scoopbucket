@@ -27,7 +27,7 @@
         "bin\\mit2ms.exe",
         "bin\\ms2mit.exe"
     ],
-    "post_install":"New-Item $dir\\krb5.conf -ItemType File",      
+    "post_install": "New-Item $dir\\krb5.conf -ItemType File",
     "env_set": {
         "KRB5_CONFIG": "$dir\\krb5.conf"
     },
@@ -40,5 +40,5 @@
             "bin\\MIT Kerberos.chm",
             "MIT Kerberos Documentation"
         ]
-    ]    
+    ]
 }
