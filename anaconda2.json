@@ -1,0 +1,59 @@
+{
+    "version": "5.1.0",
+    "license": "BSD",
+    "homepage": "https://www.anaconda.com/",
+    "checkver": {
+        "url": "https://repo.continuum.io/archive",
+        "re": "Anaconda2-([\\d.]+)-Windows"
+    },
+    "bin": [
+        [
+            "python.exe",
+            "python"
+        ]
+    ],
+    "pre_install": "
+        Write-Host 'Installing Anaconda 2. This can take up to 30 minutes on an HDD.' -ForegroundColor Magenta
+    ",
+    "installer": {
+        "file": "anaconda2-installer.exe",
+        "args": [
+            "/S",
+            "/InstallationType=JustMe",
+            "/RegisterPython=1",
+            "/AddToPath=0",
+            "/D=$dir"
+        ]
+    },
+    "uninstaller": {
+        "file": "Uninstall-Anaconda2.exe",
+        "args": [
+            "/S"
+        ]
+    },
+    "env_add_path": "Scripts",
+    "architecture": {
+        "64bit": {
+            "url": "http://repo.continuum.io/archive/Anaconda2-5.1.0-Windows-x86_64.exe#/anaconda2-installer.exe",
+            "hash": "md5:b16d6d6858fc7decf671ac71e6d7cfdb"
+        },
+        "32bit": {
+            "url": "http://repo.continuum.io/archive/Anaconda2-5.1.0-Windows-x86.exe#/anaconda2-installer.exe",
+            "hash": "md5:a09347a53e04a15ee965300c2b95dfde"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://repo.continuum.io/archive/Anaconda2-$version-Windows-x86_64.exe#/anaconda2-installer.exe"
+            },
+            "32bit": {
+                "url": "http://repo.continuum.io/archive/Anaconda2-$version-Windows-x86.exe#/anaconda2-installer.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl",
+            "find": "$basename<.*\\s+<.*\\s+<.*\\s+<td>([a-fA-F0-9]{32})</td>"
+        }
+    }
+}
