@@ -1,8 +1,8 @@
 {
     "version": "2.3.0",
     "license": "",
-    "extract_dir": "spark-2.3.0-bin-hadoop2.7",
-    "url": "http://www-us.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz#/spark.tar.gz",
+    "extract_dir": "spark-2.3.0-bin-hadoop2.6",
+    "url": "http://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.6.tgz#/spark.tar.gz",
     "depends": "",
     "homepage": "https://spark.apache.org/",
     "suggest": {
@@ -25,11 +25,11 @@
     "hash": "5cfbc77d140454c895f2d8125c0a751465f53cbe12720da763b1785d25c63f05",
     "bin": "",
     "autoupdate": {
-        "url": "http://www-us.apache.org/dist/spark/spark-$version/spark-$version-bin-hadoop2.7.tgz#/spark.tar.gz",
-        "extract_dir": "spark-$version-bin-hadoop2.7",
+        "url": "http://archive.apache.org/dist/spark/spark-$version/spark-$version-bin-hadoop2.6.tgz#/spark.tar.gz",
+        "extract_dir": "spark-$version-bin-hadoop2.6",
         "hash": {
             "mode": "extract",
-            "url": "https://archive.apache.org/dist/spark/spark-$version/spark-$version-bin-hadoop2.7.tgz.md5"
+            "url": "https://archive.apache.org/dist/spark/spark-$version/spark-$version-bin-hadoop2.6.tgz.md5"
         }
     }
 }
