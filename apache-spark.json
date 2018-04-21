@@ -1,8 +1,8 @@
 {
-    "version": "2.3.0",
+    "version": "1.6.3",
     "license": "",
-    "extract_dir": "spark-2.3.0-bin-hadoop2.6",
-    "url": "http://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.6.tgz#/spark.tar.gz",
+    "extract_dir": "spark-1.6.3-bin-hadoop2.6",
+    "url": "http://archive.apache.org/dist/spark/spark-1.6.3/spark-1.6.3-bin-hadoop2.6.tgz#/spark.tar.gz",
     "depends": "",
     "homepage": "https://spark.apache.org/",
     "suggest": {
@@ -15,7 +15,7 @@
         "re": "Latest Release \\(Spark (\\d.+)\\)"
     },
     "post_install": [
-        "wget http://media.sundog-soft.com/SparkScala/winutils.exe -OutFile $dir/bin/winutils.exe"
+        "try{wget http://media.sundog-soft.com/SparkScala/winutils.exe -OutFile $dir/bin/winutils.exe}Catch{'failed downloading winutils with error:'+$_.Exception.Message}"
     ],
     "env_add_path": "bin",
     "env_set": {

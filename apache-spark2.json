@@ -15,7 +15,7 @@
         "re": "Latest Release \\(Spark (\\d.+)\\)"
     },
     "post_install": [
-        "wget http://media.sundog-soft.com/SparkScala/winutils.exe -OutFile $dir/bin/winutils.exe"
+        "try{wget http://media.sundog-soft.com/SparkScala/winutils.exe -OutFile $dir/bin/winutils.exe}Catch{'failed downloading winutils with error:'+$_.Exception.Message}"
     ],
     "env_add_path": "bin",
     "env_set": {
