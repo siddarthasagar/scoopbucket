@@ -1,5 +1,5 @@
 {
-    "version": "5.1.0",
+    "version": "5.2.0",
     "license": "BSD",
     "homepage": "https://www.anaconda.com/",
     "checkver": {
@@ -34,12 +34,12 @@
     "env_add_path": "Scripts",
     "architecture": {
         "64bit": {
-            "url": "http://repo.continuum.io/archive/Anaconda2-5.1.0-Windows-x86_64.exe#/anaconda2-installer.exe",
-            "hash": "md5:b16d6d6858fc7decf671ac71e6d7cfdb"
+            "url": "http://repo.continuum.io/archive/Anaconda2-5.2.0-Windows-x86_64.exe#/anaconda2-installer.exe",
+            "hash": "md5:595e427e4b625b6eab92623a28dc4e21"
         },
         "32bit": {
-            "url": "http://repo.continuum.io/archive/Anaconda2-5.1.0-Windows-x86.exe#/anaconda2-installer.exe",
-            "hash": "md5:a09347a53e04a15ee965300c2b95dfde"
+            "url": "http://repo.continuum.io/archive/Anaconda2-5.2.0-Windows-x86.exe#/anaconda2-installer.exe",
+            "hash": "md5:4a3729b14c2d3fccd3a050821679c702"
         }
     },
     "autoupdate": {

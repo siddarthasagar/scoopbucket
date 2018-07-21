@@ -1,13 +1,13 @@
 {
     "homepage": "https://spark.apache.org/",
-    "version": "2.3.0",
-    "extract_dir": "spark-2.3.0-bin-hadoop2.7",
+    "version": "2.3.1",
+    "extract_dir": "spark-2.3.1-bin-hadoop2.7",
     "url": [
-        "https://www.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz#/spark.tar.gz",
+        "https://www.apache.org/dist/spark/spark-2.3.1/spark-2.3.1-bin-hadoop2.7.tgz#/spark.tar.gz",
         "https://github.com/steveloughran/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe"
     ],
     "hash": [
-        "md5:AF45EEB06DC1BEEE6D4C70B92C0E0237",
+        "e87499e5417a64341cbda25e087632dd9f6ce7ad249dfeba47d9d02a51305fc2",
         "f933bd8d2547f795dc3165d269b3dc26b22059695616523fc06c8d69f6a54736"
     ],
     "post_install": "If(Test-Path(\"$dir\\winutils.exe\")) { Move-Item \"$dir\\winutils.exe\" \"$dir\\bin\\winutils.exe\" }",
