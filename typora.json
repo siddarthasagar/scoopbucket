@@ -1,21 +1,19 @@
 {
     "homepage": "https://typora.io/",
     "description": "Typora — a minimal markdown editor, markdown reader.",
-    "version": "0.9.9.57",
+    "version": "0.9.9.60",
     "architecture": {
         "64bit": {
             "url": "https://typora.io/windows/typora-setup-x64.exe",
-            "hash": "177f59375b1e8c383ffa167f96283a0fbafd42823bb3ad1d58460e4e8fdb687f"
+            "hash": "0afcb283e30dba4722fbbaa96395c671e2af97a55246e2bfad91e6c2c0ad3d0f"
         },
         "32bit": {
             "url": "https://typora.io/windows/typora-setup-ia32.exe",
-            "hash": "53ad276a41a30399143e242150c956b7b2da01605b56b460da0577a74fcdc21e"
+            "hash": "cda2e384980800f7e86c1a7b98d0c362f71c2f3102c63a01b0f98c5a8e02ba09"
         }
     },
     "innosetup": true,
-    "bin": [
-        "Typora.exe"
-    ],
+    "bin": "Typora.exe",
     "shortcuts": [
         [
             "Typora.exe",

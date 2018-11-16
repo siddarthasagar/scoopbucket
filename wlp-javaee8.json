@@ -1,8 +1,8 @@
 {
     "homepage": "https://developer.ibm.com/wasdev",
-    "version": "18.0.0.2",
-    "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/18.0.0.2/wlp-javaee8-18.0.0.2.zip",
-    "hash": "27fa1ef60fb0b1ea5cdde9493c6d774fd6880782451b9752efc0ee82fbd545b2",
+    "version": "18.0.0.3",
+    "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/18.0.0.3/wlp-javaee8-18.0.0.3.zip",
+    "hash": "e2230e40ab9ad2faa877ec65a52eb72917eb5a192ac8241a07c3ae4fd178356b",
     "env_add_path": "wlp/bin",
     "suggest": {
         "JDK": [
